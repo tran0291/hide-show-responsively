@@ -1,3 +1,9 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 html {
   box-sizing: border-box;
   font-size: normal 100%/1.5 sans-serif;
@@ -5,4 +11,23 @@ html {
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+@media only screen and (min-width: 25em)
+{
+  img {
+    display: inline-block;
+    width: 100%;
+  }
+
+img:nth-child(2) {
+  display: none;
+}
+
+img:nth-child(3) {
+    display: none;
+  }
+
+img:nth-child(4) {
+  display: none;
 }
