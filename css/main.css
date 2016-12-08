@@ -5,6 +5,9 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
   font-size: normal 100%/1.5 sans-serif;
 }
@@ -13,21 +16,41 @@ html {
   box-sizing: inherit;
 }
 
-@media only screen and (min-width: 25em)
+@media only screen and (max-width: 25em)
 {
-  img {
-    display: inline-block;
-    width: 100%;
-  }
+img {
+  display: inline-block;
+  width: 100%;
+}
 
 img:nth-child(2) {
   display: none;
 }
 
 img:nth-child(3) {
-    display: none;
+    display: visible;
   }
 
 img:nth-child(4) {
   display: none;
+}
+
+
+@media only screen and (min-width: 25em){
+
+img {
+  display: inline-block;
+  width: 40%;
+}
+
+img:nth-child(2) {
+  display: inline-block;
+}
+
+img:nth-child(3) {
+    display: inline-block;
+  }
+
+img:nth-child(4) {
+  display: inline-block;
 }
