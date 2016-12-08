@@ -38,7 +38,53 @@ img:nth-child(4) {
 
 img {
   display: inline-block;
-  width: 40%;
+  width: 50%;
+}
+
+img:nth-child(2) {
+  display: inline-block;
+}
+
+img:nth-child(3) {
+    display: inline-block;
+  }
+
+img:nth-child(4) {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 38em){
+
+img {
+  display: inline-block;
+  width: 32%;
+}
+
+img:first-child {
+  display: none;
+}
+
+img:nth-child(2) {
+  display: inline-block;
+}
+
+img:nth-child(3) {
+    display: inline-block;
+  }
+
+img:nth-child(4) {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 60em){
+
+img {
+  display: inline-block;
+  width: 32%;
+}
+
+img:first-child {
+  display: none;
 }
 
 img:nth-child(2) {
